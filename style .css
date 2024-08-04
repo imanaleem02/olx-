@@ -1,0 +1,366 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f5f5;
+}
+.header{
+    padding: 10px;
+    background-color: #f5f5f5;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img{
+    mix-blend-mode: multiply;
+}
+.nav-bar-logo a{
+    text-decoration: none;
+    max-width: 100px;
+    font-weight: bold;
+    margin: 0px 20px;
+}
+.icon-circle {
+    display: flex;
+    align-items: center;
+}
+
+.icon-circle i {
+    background-color: rgb(218, 218, 218);
+    color:  rgb(0, 32, 0);;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+}
+.nav-bar-items{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav-bar-items a{
+    color:  rgb(0, 32, 0);
+}
+.nav-bar-logo i{
+    font-size: 1.3rem;
+}
+.header-bottom{
+    display: flex;
+}
+.search-bar,.search-bar-2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c7bdbd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.search-bar input,.search-bar-2 textarea {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    mix-blend-mode: multiply;
+    text-transform: capitalize;
+    flex: 1;
+}
+
+.search-bar i {
+    color: rgb(0, 32, 0);
+    font-size: 1.3rem;
+}
+
+.search-bar .fa-location-dot {
+    margin-right: 10px;
+}
+
+.search-bar .fa-arrow-right {
+    margin-left: 10px;
+}
+.search-bar-2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar-2 textarea {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.search-bar-2 i {
+    background-color: rgb(0, 32, 0);
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.login {
+    color: rgb(0, 32, 0);
+    margin: 0 50px 3px 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Adjust thickness */
+    background-color: rgb(0, 32, 0); /* Same color as text */
+}
+.login:hover::after {
+    opacity: 0;
+}
+.btn{
+    border-radius: 40%;
+    border-color: #4feae2  #ffd03e #588bff;
+    border-width: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+button.btn i{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+.login-btn{
+    display: flex;
+}
+
+/* header-bottom css */
+
+.header-bottom-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+p.categories{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #385960;
+    font-size: 0.9rem;
+}
+p.categories i{
+    display: flex;
+    font-size: 1.2rem;
+}
+.list li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 25px;
+    color: #5a6962;
+    font-size: 0.8rem;
+}
+.list li:hover{
+    cursor: pointer;
+    color: #49e5db;
+}
+.category{
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+}
+.category-heading{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(0, 32, 0);
+}
+.cat1-main{
+    display: flex;
+}
+.category-card{
+    margin: 0 30px;
+}
+.category-name{
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+}
+.cat2-main{
+    display: flex;
+}
+
+.card {
+    overflow: hidden;
+    margin: 0 10px;
+    max-height: fit-content ;
+  }
+  .card img {
+    display: block;
+    object-fit: cover;
+  }
+  .price{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-location{
+    font-size: 0.8rem;
+  }
+  .item-main{
+    display: flex;
+    margin: 0 20px;
+  }
+  .card-title{
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .card-text{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  h2{
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  .footer{
+    display: flex;
+  }
+  h6{
+    font-weight: bold;
+    color:  rgb(0, 32, 0); 
+  }
+  
+  .footer-content{
+    text-align: center;
+    margin: 0 30px;
+  }
+  .footer-content p{
+    color: rgb(97, 143, 97);
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start;
+  }
+div li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+  }
+  div li i{
+    color: rgb(97, 143, 97);
+  }
+  .footer-content :hover{
+    color: rgb(0, 32, 0);
+  }
+  .buttom-bar{
+    background-color: rgb(0, 32, 0);
+    text-align: right;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header{
+        padding: 0 20px;
+    }
+    .nav-bar-logo a{
+        margin: 0;
+    }
+    .header-bottom {
+        flex-direction: column;
+    }
+    .login {
+        margin: 0 280px 3px 0px;
+    }
+    .search-bar,
+    .search-bar-2 {
+        margin: 10px 0;
+    }
+    .header-bottom-bar {
+        flex-direction: column; /* changed from row to column */
+    }
+    .list li {
+        padding: 10px; /* increased padding for better spacing */
+    }
+    p.categories {
+        text-align: left; /* added to center the categories text */
+    }
+    p.categories i{
+        display: none;
+    }
+    .search-bar-2, .search-bar-2 textarea{
+        overflow: hidden;
+    }
+    .login{
+        margin: 0;
+    }
+    .login-btn{
+        justify-content: space-around;
+    }
+    .category {
+        max-width: 100%;
+        margin: 0;
+    }
+    .category-card {
+        margin: 10px 0;
+    }
+    .cat1-main,
+    .cat2-main {
+        flex-direction: column;
+    }
+    .Mobiles,
+    .cars,
+    .Bikes,
+    .houses {
+        h2 {
+            margin-left: 0;
+        }
+
+        .item-main {
+            flex-direction: column;
+
+            .card {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+
+        .footer-content {
+            margin: 10px 0;
+        }
+    }
+}
+
+
+  
